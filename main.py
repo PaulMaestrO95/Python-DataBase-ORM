@@ -5,7 +5,7 @@ from models import create_tables, Publisher, Shop, Book, Stock, Sale
 
 if __name__ == '__main__':
 
-    DSN = 'postgresql://postgres:19411945@localhost:5432/netology_db'
+    DSN = 'postgresql://postgres:postgres@localhost:5432/netology_db'
     engine = sqlalchemy.create_engine(DSN)
 
     Session = sessionmaker(bind=engine)
